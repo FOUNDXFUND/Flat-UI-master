@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flat UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+
+    <!-- Loading Flat UI -->
+    <!-- <link href="css/flat-ui.css" rel="stylesheet"> -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Loading My css -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <div id="upper-menu-container">
+    <div id="page-menu-wrapper">
+      <ul class="main left">
+        <li>
+          <a href="http://designmodo.com" class="top-menu home">
+            <span aria-hidden="true" class="icn_logo">
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="top-menu">
+            <span aria-hidden="true" class="icn_list">
+            </span>
+            Categories
+          </a>
+          <div class="dropdown-menu categories">
+            <div class="menu-header">
+              <ul id="menu-nav-menu-1" class="menu">
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18117">
+                  <a href="http://designmodo.com/design/">
+                    Design
+                  </a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-18118">
+                  <a href="http://designmodo.com/freebies/">
+                    Freebies
+                  </a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18124">
+                  <a href="http://designmodo.com/tutorials/">
+                    Tutorials
+                  </a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-46154">
+                  <a href="http://designmodo.com/coding/">
+                    Coding
+                  </a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18120">
+                  <a href="http://designmodo.com/inspiration/">
+                    Inspiration
+                  </a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18125">
+                  <a href="http://designmodo.com/wordpress/">
+                    WordPress
+                  </a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79238">
+                  <a href="http://designmodo.com/resources/">
+                    Resources
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="/shop/" class="top-menu shop">
+            <span aria-hidden="true" class="icn_cart">
+            </span>
+            Blog
+          </a>
+        </li>
+        <li>
+          <div class="top-menu search">
+            <span class="label">
+              <span aria-hidden="true" class="icn_search">
+              </span>
+              Search
+              <span class="cursor">
+              </span>
+            </span>
+            <div class="formsearch">
+              <form id="search" action="http://designmodo.com/search/" method="get"
+              target="_top">
+                <input type="text" name="q" class="search-input">
+                <input type="hidden" name="cx" value="partner-pub-8533961490949414:1129877839">
+                <input type="hidden" name="cof" value="FORID:10">
+                <input type="hidden" name="ie" value="UTF-8">
+              </form>
+              <span class="gobutton">
+                <span aria-hidden="true" class="search_icon">
+                </span>
+              </span>
+            </div>
+          </div>
+          <script>
+            jQuery(document).ready(function($) {
+              $('.gobutton').click(function() {
+                $('#search').submit();
+              });
+
+              $(document).click(function() {
+                $(".top-menu.search").removeClass('selected');
+              });
+
+              $(".top-menu.search").click(function(event) {
+                $(this).addClass('selected');
+                $('.search-input').focus();
+                event.stopPropagation();
+              });
+            });
+          </script>
+        </li>
+      </ul>
+      <ul style="float:right; right:-1px; position:relative;" class="main right">
+        <li>
+          <a href="javascript:void(0)" class="top-menu">
+            <span aria-hidden="true" class="icn_follow">
+            </span>
+            Follow us
+          </a>
+          <div class="dropdown-menu follow">
+            <ul class="social">
+              <li>
+                <a href="http://feeds.feedburner.com/designmodo" target="_blank" title="Subscribe by RSS"
+                class="rss">
+                  <span aria-hidden="true" class="icn_rss">
+                  </span>
+                  RSS
+                </a>
+              </li>
+              <li>
+                <a href="http://www.twitter.com/designmodo" target="_blank" title="Follow us on Twitter"
+                class="twitter">
+                  <span aria-hidden="true" class="icn_twitter">
+                  </span>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="http://www.facebook.com/designmodo" target="_blank" title="Join us on Facebook"
+                class="facebook">
+                  <span aria-hidden="true" class="icn_facebook">
+                  </span>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.google.com/+DesignModo" target="_blank" title="Google+"
+                class="googleplus">
+                  <span aria-hidden="true" class="icn_googleplus">
+                  </span>
+                  Google+
+                </a>
+              </li>
+              <li>
+                <a href="http://dribbble.com/designmodo" target="_blank" title="Follow us on Dribbble"
+                class="dribbble">
+                  <span aria-hidden="true" class="icn_dribbble">
+                  </span>
+                  Dribbble
+                </a>
+              </li>
+            </ul>
+            <div class="counter">
+              48404 Subscribers &amp; Followers
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="top-menu">
+            <span aria-hidden="true" class="icn_share">
+            </span>
+            Share
+          </a>
+          <div class="dropdown-menu share">
+            <ul class="share-page">
+              <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdesignmodo.com%2Fflat-free%2F&amp;t=Flat+UI+Free+-+PSD%26%23038%3BHTML+User+Interface+Kit"
+                class="facebook-share" target="_blank">
+                  <span aria-hidden="true" class="icon_facebook share-icon">
+                  </span>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/intent/tweet?status=Flat+UI+Free+-+PSD%26%23038%3BHTML+User+Interface+Kit%20-%20http%3A%2F%2Fdesignmodo.com%2Fflat-free%2F%20via%20@designmodo"
+                class="twitter-share" target="_blank">
+                  <span aria-hidden="true" class="icon_twitter share-icon">
+                  </span>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/share?url=http%3A%2F%2Fdesignmodo.com%2Fflat-free%2F"
+                class="google-share" target="_blank">
+                  <span aria-hidden="true" class="icon_google share-icon">
+                  </span>
+                  Google+
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="top-menu profile">
+            <span aria-hidden="true" class="icn_profile">
+            </span>
+          </a>
+          <div class="dropdown-menu menu-login">
+            <form method="post" class="menu-login-form" autocomplete="off">
+              <p class="form-row form-row-wide">
+                <input type="text" class="input-text" name="username" id="username" placeholder="Username"
+                autocomplete="off">
+              </p>
+              <p class="form-row form-row-wide">
+                <input class="input-text" type="password" name="password" id="password"
+                placeholder="Password">
+              </p>
+              <div class="clear">
+              </div>
+              <div>
+                <input type="hidden" name="redirect" class="redirect" value="http://designmodo.com/my-account/">
+                <input type="hidden" name="testcookie" value="1">
+                <input type="hidden" name="woocommerce_login" value="1">
+                <input type="hidden" name="rememberme" value="forever">
+              </div>
+              <p class="form-row">
+                <input type="hidden" id="_n" name="_n" value="13ec147184">
+                <input type="hidden" name="_wp_http_referer" value="/flat-free/">
+                <input type="submit" class="button" name="login" value="Login">
+                <a class="lost_password" href="http://designmodo.com/lost-password">
+                  Lost Password?
+                </a>
+              </p>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="header-wrapper">
+      <div id="logo">
+        <a class="main-logo" href="http://designmodo.com" title="Web Design, Graphic Design, Tutorials, Inspiration, Web Development">
+          <!-- <img src="http://designmodo.com/wp-content/themes/designmodov2/images/logo.png" alt="Designmodo" width="175"/> -->
+        </a>
+      </div><!--end logo-->
+  </div>
+
+
+  <div id="main-wrapper">
+  <div id="content-wrapper">
+    <div style="clear:both;">
+    </div>
+    <div class="articles-container">
+      <!--<div class="wdl-archive"><div style='border:1px solid #dbdbdb; width:618px;' >  
+      </div>
+      end wdl-single-->
+      <div style="clear:both;">
+      </div>
+      <div class="article">
+        <h2 class="article-title">
+          <a href="http://designmodo.com/twitter-bootstrap-3/" rel="bookmark" title="Permanent Link to Twitter Bootstrap 3: New Release Preview – Mobile First">
+            PHP文章
+          </a>
+        </h2>
+        <div class="index-author-comments-date">
+          <span class="author-name">
+            最流行的web语言之一,怎能错过
+          </span>
+        </div>
+        <div class="article-image">
+           <ul>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这三个函数的使用区别</span></li>
+        </ul>
+        </div>
+        <!--end article-image-->
+        <!-- ul li -->
+       
+         
+        <div class="read-more">
+          <a href="http://designmodo.com/twitter-bootstrap-3/">
+            Read More
+          </a>
+        </div>
+      </div>
+      <!--end article-->
+      <div class="article">
+        <h2 class="article-title">
+          <a href="http://designmodo.com/twitter-bootstrap-3/" rel="bookmark" title="Permanent Link to Twitter Bootstrap 3: New Release Preview – Mobile First">
+            PHP文章
+          </a>
+        </h2>
+        <div class="index-author-comments-date">
+          <span class="author-name">
+            最流行的web语言之一,怎能错过
+          </span>
+        </div>
+        <div class="article-image">
+           <ul>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;这三个函数的使用区别</span></li>
+          <li><a href="#">PHP empty(),isset()与is_null()的实例测试</a>
+          <span class="vicetitle">&nbsp;&nbsp;这三个函数的使用区别</span></li>
+        </ul>
+        </div>
+        <!--end article-image-->
+        <!-- ul li -->
+       
+         
+        <div class="read-more">
+          <a href="http://designmodo.com/twitter-bootstrap-3/">
+            Read More
+          </a>
+        </div>
+      </div>
+      <!--end article-->
+    </div>
+    <!--end articles container-->
+    <div class="sidebar-container">
+      <div class="sidebar-wrapper" id="sidebar-wrapper">
+         <div class="ads-wrapper">
+          <h3 class="sidebar-h3">
+            专题
+          </h3>
+          <div class="buy-sell-ads-wrapper">
+            <!-- BuySellAds.com Zone Code -->
+            <a class="dm-add" href="#" title="PHP" style="background-color: #6181b6;" target="_blank">
+              <img src="./images/icon/php-128.png" alt="PHP">
+            </a>
+            <a class="dm-add" href="#" title="Jquery" style="background-color: #0867AB;" target="_blank">
+              <img src="./images/icon/jquery-128.png" alt="Jquery">
+            </a>
+            <a class="dm-add" href="#" title="HTML5" style="background-color: #f06529;" target="_blank">
+              <img src="./images/icon/html5-128.png" alt="HTML5">
+            </a>
+            <a class="dm-add" href="#" title="PHP" style="background-color: #7ac142;" target="_blank">
+              <img src="./images/icon/php-128.png" alt="PHP">
+            </a>
+            <a class="dm-add" href="#" title="PHP" style="background-color: #731a8b;" target="_blank">
+              <img src="./images/icon/php-128.png" alt="PHP">
+            </a>
+            <a class="dm-add" href="#" title="PHP" style="background-color: #ff1919;" target="_blank">
+              <img src="./images/icon/php-128.png" alt="PHP">
+            </a>
+            <!-- End BuySellAds.com Zone Code -->
+            <div style="clear:both;">
+            </div>
+          </div>
+          <div class="advertwithus">
+            <a href="http://buysellads.com/buy/detail/40472" target="_blank">
+              - Advertise With Us -
+            </a>
+          </div>
+        </div>
+        <div class="sidebar-divider">
+          <div style="clear:both;">
+          </div>
+        </div>
+        <h3 class="top-shop">
+          Top Selling Products
+          <a href="http://designmodo.com/shop/">
+            Show more
+          </a>
+        </h3>
+        <ul class="shop-container">
+          <li>
+            <a href="http://designmodo.com/the-bricks-addons/">
+              <img src="http://designmodo.com/wp-content/themes/designmodov2/includes/timthumb.php?src=http://designmodo.com/wp-content/uploads/2012/04/the_bricks_addons.jpg&amp;w=220&amp;h730&amp;zc=1&amp;q=90">
+              <span>
+                UI PACK
+              </span>
+              <strong>
+                The Bricks UI – Addons Bundle Pack
+              </strong>
+              <big>
+                $89
+              </big>
+            </a>
+          </li>
+          <li>
+            <a href="http://designmodo.com/square/">
+              <img src="http://designmodo.com/wp-content/themes/designmodov2/includes/timthumb.php?src=http://designmodo.com/wp-content/uploads/2013/02/square_ui.jpg&amp;w=220&amp;h730&amp;zc=1&amp;q=90">
+              <span>
+                FLAT UI
+              </span>
+              <strong>
+                Square UI
+              </strong>
+              <big>
+                $39
+              </big>
+            </a>
+          </li>
+          <li>
+            <a href="http://designmodo.com/pandora/">
+              <img src="http://designmodo.com/wp-content/themes/designmodov2/includes/timthumb.php?src=http://designmodo.com/wp-content/uploads/2012/04/pandora.jpg&amp;w=220&amp;h730&amp;zc=1&amp;q=90">
+              <span>
+                iOS UI
+              </span>
+              <strong>
+                Pandora UI for iOS
+              </strong>
+              <big>
+                $39
+              </big>
+            </a>
+          </li>
+          <li>
+            <a href="http://designmodo.com/impressionist/">
+              <img src="http://designmodo.com/wp-content/themes/designmodov2/includes/timthumb.php?src=http://designmodo.com/wp-content/uploads/2012/04/impressionist.jpg&amp;w=220&amp;h730&amp;zc=1&amp;q=90">
+              <span>
+                UI PACK
+              </span>
+              <strong>
+                Impressionist UI
+              </strong>
+              <big>
+                $39
+              </big>
+            </a>
+          </li>
+        </ul>
+        <div style="clear:both;">
+        </div>
+        <div class="sidebar-divider">
+        </div>
+        <h3 class="sidebar-h3">
+          Newsletter
+        </h3>
+        <div class="newsletter-wrapper">
+          <p>
+            Sign up for our newsletter to receive periodic articles, updates, freebies
+            and premium items; every month.
+          </p>
+          <form action="http://designmodo.us4.list-manage.com/subscribe/post?u=d7b5474e1bff23f08409d4ba9&amp;id=a2ae53acc1"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+          class="validate" target="_blank">
+            <input class="subscribe-input" type="text" name="EMAIL" id="mce-EMAIL"
+            placeholder="Enter your email address" size="47">
+            <button type="submit" class="subscribenow">
+              <span class="go">
+                Go
+              </span>
+              <span class="subscribe">
+                Subscribe
+              </span>
+            </button>
+          </form>
+        </div>
+        <div class="mc-banner">
+          <script type="text/javascript" language="JavaScript" src="http://designmodo.us4.list-manage1.com/subscriber-count?b=11&amp;u=168bb96d-2fce-4c34-accc-56fc2d785ce2&amp;id=a2ae53acc1">
+          </script>
+          <div class="mc-badge mc-badge01 mc-badge01-sub01" style="color: #51514a;font-family: sans-serif;font-size: 11px;font-weight: bold;margin: 0;padding: 0;width: auto;display: inline-block;">
+            <p style="color: #51514a;font-family: sans-serif;font-size: 11px;font-weight: bold;margin: 0;padding: 0;">
+              <span class="subscriber-count" style="background-color: #50514a;color: #fff;display: inline-block;padding: 2px 5px 2px 5px;line-height: 1em;min-width: 105px;text-align: center;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;border-top: 1px solid #50514a;">
+                93,879 Subscribers
+              </span>
+            </p>
+            <p class="powered-by" style="color: #51514a;font-family: sans-serif;font-size: 11px;font-weight: bold;margin: 0;padding: 0;">
+              <a href="http://www.mailchimp.com/monkey-rewards/?utm_source=freemium_newsletter&amp;utm_medium=email&amp;utm_campaign=monkey_rewards&amp;aid=d7b5474e1bff23f08409d4ba9&amp;afl=1"
+              target="_blank" style="color: #51514a;font-family: sans-serif;font-size: 11px;font-weight: bold;margin: 0;padding: 0;background: transparent url(http://gallery.mailchimp.com/089443193dd93823f3fed78b4/images/powered_by_mailchimp01.png) 50% bottom no-repeat;display: block;height: 16px;text-indent: -9999px;">
+                Email marketing powered by MailChimp
+              </a>
+            </p>
+          </div>
+        </div>
+        <div style="clear:both;">
+        </div>
+        <div class="sidebar-divider">
+        </div>
+       
+        <h3 class="sidebar-h3">
+          Popular Posts (Month)
+        </h3>
+        <ul class="popular-posts">
+          <li>
+            <h3>
+              <a href="http://designmodo.com/flat-free/">
+                Flat UI Free – PSD&amp;HTML User Interface Kit
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="http://designmodo.com/square/">
+                Square UI – User Interface Kit
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="http://designmodo.com/square-free/">
+                Square UI Free – User Interface Kit
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="http://designmodo.com/responsive-css-grid-frameworks/">
+                Useful Responsive CSS Grid Frameworks
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="http://designmodo.com/web-design-trends-2013/">
+                Reflections on Web Design Trends in 2013
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="http://designmodo.com/interview-martin-oberhauser/">
+                Interview with Designer: Martin Oberhäuser
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="http://designmodo.com/custom-social-media-icons/">
+                How to Create Custom Social Media Icons in CSS3
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="http://designmodo.com/twitter-bootstrap-3/">
+                Twitter Bootstrap 3: New Release Preview – Mobile First
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="http://designmodo.com/design-retina-displays/">
+                Designing for Retina Displays, Optimize Website for @2x Images
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="http://designmodo.com/overcome-designers/">
+                Overcome Designer’s Block: Tips and Tricks
+              </a>
+            </h3>
+          </li>
+        </ul>
+        <!-- end popular-posts-->
+        <div style="clear:both;">
+        </div>
+        <div class="sidebar-divider">
+        </div>
+        <div class="recent-posts">
+          <h3 class="sidebar-h3">
+            Latest Tutorials
+          </h3>
+          <ul class="popular-posts">
+            <li>
+              <h3>
+                <a href="http://designmodo.com/transform-duplicate-objects-illustrator/"
+                class="popular-title" title="How to Transform and Duplicate Objects in Adobe Illustrator">
+                  How to Transform and Duplicate Objects in Adobe Illustrator
+                </a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="http://designmodo.com/custom-social-media-icons/" class="popular-title"
+                title="How to Create Custom Social Media Icons in CSS3">
+                  How to Create Custom Social Media Icons in CSS3
+                </a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="http://designmodo.com/pages-panel-fireworks/" class="popular-title"
+                title="Rapid Prototyping with the Pages Panel in Fireworks CS6">
+                  Rapid Prototyping with the Pages Panel in Fireworks CS6
+                </a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="http://designmodo.com/alignment-combining-objects-illustrator/"
+                class="popular-title" title="Alignment and Combining Objects in Adobe Illustrator">
+                  Alignment and Combining Objects in Adobe Illustrator
+                </a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="http://designmodo.com/create-css3-mega-menu/" class="popular-title"
+                title="How to Create a CSS3 Mega Drop-Down Menu">
+                  How to Create a CSS3 Mega Drop-Down Menu
+                </a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="http://designmodo.com/website-design-bricks-ui/" class="popular-title"
+                title="Create a Website Design using The Bricks UI">
+                  Create a Website Design using The Bricks UI
+                </a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="http://designmodo.com/create-css3-login-form/" class="popular-title"
+                title="How to Create a CSS3 Login Form">
+                  How to Create a CSS3 Login Form
+                </a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="http://designmodo.com/retro-navigation-menu-css3/" class="popular-title"
+                title="Create a Retro Navigation Menu with CSS3">
+                  Create a Retro Navigation Menu with CSS3
+                </a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="http://designmodo.com/objects-basic-geometric-shapes-illustrator/"
+                class="popular-title" title="Creating Objects Using Basic Geometric Shapes in Adobe Illustrator">
+                  Creating Objects Using Basic Geometric Shapes in Adobe Illustrator
+                </a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="http://designmodo.com/contact-form-psd/" class="popular-title"
+                title="Create a Simple Contact Form in Adobe Photoshop">
+                  Create a Simple Contact Form in Adobe Photoshop
+                </a>
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--end sidebar-container-->
+    <div class="bsa700">
+      <!-- BuySellAds.com Zone Code -->
+      <div id="bsap_1255531" class="bsap_1255531 bsap">
+        <iframe width="728" height="90" id="backfill_1255531_frame" src="//s3.buysellads.com/1255531/backfill5.html"
+        frameborder="0" class="bsap_backfillframe" scrolling="no">
+        </iframe>
+        <div class="bsap_adhere2">
+          <a href="http://buysellads.com/buy/detail/40472/zone/1255531?utm_source=site_40472&amp;utm_medium=website&amp;utm_campaign=cpmadhere&amp;utm_content=zone_1255531">
+            advertise here
+          </a>
+        </div>
+      </div>
+      <!-- End BuySellAds.com Zone Code -->
+    </div>
+    <!--end bsa 700-->
+    <div style="clear:both;">
+    </div>
+  </div>
+  <!--end content-wrapper-->
+</div>
+
+
+<div id="footer-wrapper">
+
+<div class="menu-footer-container"><ul id="menu-footer-menu" class="page-menu-wrapper-footer"><li id="menu-item-89205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89205"><a href="http://designmodo.com/privacy-statement/">Privacy</a></li>
+<li id="menu-item-89206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89206"><a href="http://designmodo.com/terms-and-conditions/">Terms</a></li>
+<li id="menu-item-89204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89204"><a href="http://designmodo.com/advertise/">Advertise</a></li>
+<li id="menu-item-89605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89605"><a href="http://designmodo.com/affiliates/">Affiliates</a></li>
+<li id="menu-item-89207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89207"><a href="http://designmodo.com/about/">About</a></li>
+<li id="menu-item-89209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89209"><a href="http://designmodo.com/contact-us/">Contact Us</a></li>
+</ul></div>
+
+   <ul id="footer-container-right">
+      <li class="copyright">Copyright © 2013  <a href="http://designmodo.com/" class="on" title="DesignModo">DesignModo</a>. All Rights Reserved.</li>
+    <li class="copyright"><script type="text/javascript">(function () { var c = document.createElement('link'); c.type = 'text/css'; c.rel = 'stylesheet'; c.href = 'http://images.dmca.com/badges/dmca.css?ID=e4da61dc-6d57-4588-a701-a53419f71fa6'; var h = document.getElementsByTagName("head")[0]; h.appendChild(c); })();</script><div><a href="http://www.dmca.com/Protection/Status.aspx?ID=e4da61dc-6d57-4588-a701-a53419f71fa6" title="DMCA">DMCA Protected</a> • <a href="http://www.maxcdn.com/" target="_blank" title="MaxCDN">Accelerated by MaxCDN</a></div></li>
+   </ul>
+</div>
+
+
+
+
+
+    
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="js/jquery.dropkick-1.0.0.js"></script>
+    <script src="js/custom_checkbox_and_radio.js"></script>
+    <script src="js/custom_radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <script src="js/application.js"></script>
+    <!--[if lt IE 8]>
+      <script src="js/icon-font-ie7.js"></script>
+      <script src="js/icon-font-ie7-24.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+    /*
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      */
+    </script>
+    <script type="text/javascript">
+    /*
+      try{
+        var pageTracker = _gat._getTracker("UA-19972760-2");
+        pageTracker._trackPageview();
+        } catch(err) {}
+        */
+    </script>
+  </body>
+</html>
